@@ -31,7 +31,7 @@ makeCacheMatrix <- function(x = matrix()) {
 }
 
 
-
+#cachesolve function perform..
 
 cacheSolve <- function(x, ...) {
   ## Return a matrix that is the inverse of 'x'
@@ -53,10 +53,10 @@ Mymatrix <- matrix(
   c(1:4), 
   nrow=2,         #number rows=2      
   ncol=2,          #number columns=2     
-  byrow = TRUE )
+  byrow = TRUE )   #byrow is TRUE set
 
 Mymatrix       #print matrix
 
 
-new<- makeCacheMatrix(Mymatrix)
+new<- makeCacheMatrix(Mymatrix) #new veriable used
 cacheSolve(new)
